@@ -1,0 +1,17 @@
+/* mobile view -> defaule as base.css*/
+
+/* media view */
+@media (min-width: 600px) and (max-width: 1000px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    main section:last-child {
+        grid-column: 1/3;
+    }
+}
+/* larger view */
+@media screen and (min-width: 1000px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

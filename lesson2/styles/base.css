@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Mulish:wght@200&family=PT+Sans&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+}
+header {
+    font-family: 'PT Sans', sans-serif;
+    background-color: rgb(1, 84, 1);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+main section {
+    /* width: 25rem; */
+    margin: 1rem;
+    border: solid 1px darkgrey;
+    border-radius: 20px;
+
+}
+section h3 {
+    background-color: rgb(1, 84, 1);
+    color: #fff;
+    padding: 1rem 1rem;
+    margin: 0;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+img {
+    width:100%;
+    border: solid 1px darkgrey;
+    margin: 1rem auto;
+}
+section > div {
+    margin: 1rem;
+}
+p {
+    margin: 0 auto;
+}
+footer {
+    background-color: rgb(1, 84, 1);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    /* width: 30rem; */
+    margin: 0 auto;
+}
