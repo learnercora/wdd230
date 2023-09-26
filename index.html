@@ -22,11 +22,14 @@
         <h1>Lin, Chih-Yun</h1>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="chamber/siteplan.html">Site Plan</a>
-        <a href="chamber/">Chamber</a>
-        <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p4#p4" target="_blank">Scripture</a>
+        <button id="menu"></button>
+        <div class="navigation">
+            <a href="#">Home</a>
+            <a href="chamber/siteplan.html">Site Plan</a>
+            <a href="chamber/">Chamber</a>
+            <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p4#p4" target="_blank">Scripture</a>
+        </div>
     </nav>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
@@ -46,7 +49,8 @@
                 <li>
                     03:
                     <a href="lesson3/images/w3sresult-combinator.png" target="_blank">CSS Combinators</a> |
-                    <a href="https://codepen.io/learnercora/pen/PoXRdvG" target="_blank">CSS Pseudo-elements</a>
+                    <a href="https://codepen.io/learnercora/pen/PoXRdvG" target="_blank">CSS Pseudo-elements</a> |
+                    <a href="https://codepen.io/learnercora/pen/vYvRVOL" target="_blank">Responsive "Hamburger" Menu</a>
                 </li>
                 <!-- <li>04:<a href=""></a></li>
                 <li>05:<a href=""></a></li>
@@ -60,10 +64,16 @@
                 number of visits to the page, etc. -->
         </section>
     </main>
+    <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747610.8205601294!2d117.44245633146676!3d23.4685361896835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ef3065c07572f%3A0xe711f004bf9c5469!2z5Y-w54Gj!5e0!3m2!1szh-TW!2stw!4v1695693971192!5m2!1szh-TW!2stw" 
+        style="border:0;" allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
     <footer>
         <p></p>
         <p id="lastModified"></p>
     </footer>
     <script src="./scripts/getdates.js"></script>
+    <script src="./scripts/menu-toggle.js"></script>
 </body>
 </html>

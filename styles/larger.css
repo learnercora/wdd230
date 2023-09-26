@@ -10,10 +10,23 @@
         grid-column: auto;
         margin: 0 0.5rem;
     }
-    nav{
+    .navigation a {  /* nav{ */
         display: flex;
+        flex: 1 1 100%;
     }
-    nav a {
+    /* nav a {
+		flex: 1 1 100%;
+	} */
+
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation li {
+		display: block;
 		flex: 1 1 100%;
 	}
 }
