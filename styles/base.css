@@ -114,6 +114,6 @@ footer {
 
 .map{
     margin: 0 1rem;
-    width: -webkit-fill-available;
+    width: calc(100% - 2rem);
     height: 450px;
 }
