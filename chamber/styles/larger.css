@@ -1,7 +1,10 @@
 @media screen and (min-width: 700px) {
     header {
         background-color: var(--accent2-color);
-        color: #fff;
+    }
+    header > h1 ,
+    header > h2 {
+        color: var(--primary-color);
     }
     main {
         grid-template-columns: 2fr 1fr;
@@ -14,6 +17,10 @@
         display: flex;
         flex: 1 1 100%;
         justify-content: center;
+    }
+    .navigation a:hover {
+        border-top: solid 2px var(--primary-color);
+        border-bottom: solid 2px var(--primary-color);
     }
     #menu-button {
 		display: none;
