@@ -1,0 +1,24 @@
+@media screen and (min-width: 700px) {
+    header {
+        background-color: var(--accent2-color);
+        color: #fff;
+    }
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+    main .card {
+        grid-column: auto;
+        margin: 0.5rem;
+    }
+    .navigation a { 
+        display: flex;
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+    #menu-button {
+		display: none;
+	}
+	.navigation {
+		flex-direction: row;
+	}
+}

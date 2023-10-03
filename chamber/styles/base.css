@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Source+Sans+Pro:wght@900&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #011638   ;
+  --secondary-color: #2e294e ;
+  --accent1-color: #eceaed;
+  --accent2-color: #d499b9;
+  --accent3-color: #e8c1c5;
+
+  --heading-font: "Source Sans Pro", Helvetica, sans-serif;
+  --paragraph-font: Oswald, Helvetica, sans-serif;
+
+  --headline-color-on-white: var(--primary-color);  
+  --headline-color-on-color: var(--accent1-color); 
+  --paragraph-color-on-white: var(--secondary-color); 
+  --paragraph-color-on-color: var(--accent1-color); 
+  --paragraph-background-color: var(--primary-color);  
+}
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+}
+img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 50vw;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+  text-align: center;
+}
+header {
+  padding: 1em;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+header > h1, 
+header > h2 {
+  color: var(--headline-color-on-color);
+}
+footer {
+    padding: 1em;
+    background-color: var(--paragraph-background-color);
+}
+footer > p {
+    color: var(--headline-color-on-color);
+}
+p {
+  font-family: var(--paragraph-font);
+  padding: 0 0.5em;
+}
+.card {
+  border: solid 5px var(--secondary-color);
+  border-radius: 20px;
+  padding: 0 0.5em;
+  margin: 1em;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+nav > .navigation {
+    background: var(--accent3-color);
+    text-align: center;    
+}
+nav a {
+    display: block;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 1em 2rem;
+}
+nav a:hover {
+    background-color: var(--accent2-color);
+}
+#menu-button {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 6px 10px;
+ 	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#menu-button::before {
+	content: "☰";
+}
+
+#menu-button.open::before {
+	content: "⨉";
+}
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+.navigation a {
+	display: none;
+}
+.open a {
+	display: block;
+}
