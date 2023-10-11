@@ -20,6 +20,7 @@ button.addEventListener('click', () => {
         })
 
         input.value= '';
+        input.focus();
     } else {
         return input.focus();
     }
