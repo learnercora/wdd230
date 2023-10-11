@@ -22,6 +22,10 @@
     </header>
     <nav>
         <button id="menu-button" title="menu-button"></button>
+        <label id="mode" class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
         <div class="navigation">
             <a href="#">Home</a>
             <a href="">Discover</a>
@@ -30,20 +34,21 @@
         </div>
     </nav>
     <main>
-        <section class="card">
-            <h3>Hero Image</h3>
+        <section id="hero" class="card">
+            <div class="button-container">
+                <button class="button-join">Join the Chamber</button>
+            </div>
+        </section>
+        <section  id="event" class="card">
+            <!-- <h3>current event</h3> -->
         </section>
         <section class="card">
-            <h3>Join the chamber of commerce</h3>
+            <!-- <h3>weather card section</h3> -->
         </section>
-        <section class="card">
-            <h3>current event</h3>
-        </section>
-        <section class="card">
-            <h3>weather card section</h3>
-        </section>
-        <section class="card">
-            <h3>one to three company 'spotlights' advertisements.</h3>
+        <section id="spotlights" class="card">
+            <div>spotlight 1</div>
+            <div>spotlight 2</div>
+            <div>spotlight 3</div>
         </section>
     </main>
     <footer>
@@ -53,5 +58,6 @@
     </footer>
     <script src="./scripts/getdates.js"></script>
     <script src="./scripts/menu-toggle.js"></script>
+    <script src="./scripts/mode-switch.js"></script>
 </body>
 </html>
