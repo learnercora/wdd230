@@ -60,7 +60,7 @@ p {
   border-radius: 20px;
   padding: 0 0.5em;
   margin: 1em;
-  height: 150px;
+  height: max-content;
 }
 main {
     display: grid;
