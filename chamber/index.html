@@ -22,10 +22,14 @@
     </header>
     <nav>
         <button id="menu-button" title="menu-button"></button>
-        <label id="mode" class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-        </label>
+        <div class="switch">
+            <span>Dark Mode</span>
+            <label id="mode" >
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        
         <div class="navigation">
             <a href="#">Home</a>
             <a href="">Discover</a>
@@ -34,16 +38,26 @@
         </div>
     </nav>
     <main>
-        <div id="hero" class="card">
-            <div class="button-container">
-                <button class="button-join">Join the Chamber</button>
+        <div id="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/wdd230-org-hero-s.webp">
+                <source media="(max-width: 1000px)" srcset="images/wdd230-org-hero-m.webp">
+                <img src="images/wdd230-org-hero-l.webp" alt="Group Meeting Image" width="1500" height="750">
+            </picture>
+            <div class="herolabel">
+                <button>Join the Chamber</button>
             </div>
         </div>
         <section  id="event" class="card">
             <h3>current event</h3>
+            <hr>
         </section>
         <section class="card">
-            <h3>weather card section</h3>
+            <h3>Weather</h3>
+            <hr>
+            <div>Temperature:<span id="temperature">45</span> °F</div>
+            <div>Wind Speed:<span id="windspeed">4.8</span> mph</div>
+            <div>Wind Chill:<span id="windchill"></span></div>
         </section>
         <section id="spotlights" class="card">
             <h3>spotlights</h3>
@@ -60,5 +74,6 @@
     <script src="./scripts/getdates.js"></script>
     <script src="./scripts/menu-toggle.js"></script>
     <script src="./scripts/mode-switch.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
