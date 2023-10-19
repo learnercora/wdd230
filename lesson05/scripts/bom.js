@@ -5,21 +5,6 @@ const list = document.querySelector('#list');
 button.addEventListener('click', () => {
     // console.log(input);
     if (input.value !== '') {
-        // check if repeat
-        // console.log(list.children);
-        // if (list.children.length !== 0) {
-        //     const listChildrenArray = Array.from(list.children);
-        //     // console.log(listChildrenArray);
-        //     listChildrenArray.map((data)=>{
-        //         // console.log(data.firstChild.textContent)
-        //         if (input.value === data.firstChild.textContent) {
-        //             console.log("repeat")
-        //         } else {
-                    
-        //         }
-        //     })
-        // }
-
         const li = document.createElement('li');
         const deleteButton = document.createElement('button');
 
@@ -36,6 +21,7 @@ button.addEventListener('click', () => {
 
         input.value= '';
         input.focus();
+
     } else {
         return input.focus();
     }
