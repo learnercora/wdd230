@@ -119,6 +119,7 @@ footer {
     margin: 1rem;
     width: calc(100% - 2rem);
     height: 450px;
+    border: 0px;
 }
 
 
