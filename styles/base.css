@@ -66,7 +66,9 @@ main .card {
     color: #fff;
     text-align: center;
 }
-  
+.card > p {
+    text-align: center;
+}
 main li {
     list-style: none;
 }
@@ -132,15 +134,17 @@ footer {
 }
 
 .herolabel {
-	position: absolute;
-	top: 30px;
-	left: 30px;
-	background: radial-gradient(#fff, #4D5B97);
-	border: 1px solid rgba(0,0,0,.75);
-	padding: 1.5rem;
-	box-shadow: 0 0 3rem #fff;
-	opacity: 0.75;
-	/* Buenas */
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    /* background: radial-gradient(#fff, navy); */
+    /* border: 1px solid rgba(0,0,0,.75); */
+    padding: 0.5rem;
+    box-shadow: 0 0 2rem #fff;
+    opacity: 0.95;
+    border-radius: 20px;
+    color: #fff;
+    text-shadow: 2px 2px black;
 }
 
 .herolabel p {
