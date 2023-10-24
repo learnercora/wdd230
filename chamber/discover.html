@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Lin, Chih-Yun] - WDD 230 - Web Frontend Development - Chamber of Commerce</title>
+    <meta name="author" content="Lin, Chih-Yun">
+    <meta name="description" content="WDD 230 Web Frontend Development - Lin, Chih-Yun - Chamber of Commerce Website.">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="icon" href="chamber-favicon.ico">
+    <meta property="og:title" content="WDD230 Assignment">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/canonical-page">
+    <meta property="og:image" content="https://cdn-cw-english.cwg.tw/article/202308/article-64dc7e37cbe1f.jpg">
+</head>
+<body>
+    <header>
+        <h1>HsinChu Root Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <button id="menu-button" title="menu-button"></button>
+        <div class="switch">
+            <span>Dark Mode</span>
+            <label id="mode" >
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="#">Discover</a>
+            <a href="">Directiry</a>
+            <a href="">Join</a>
+        </div>
+    </nav>
+    <main>
+        <div id="discover-sidebar">
+            <section>
+                <h3 id="visit-message">Message</h3>
+            </section>
+            <section class="card">
+                <h3>Demographics</h3>
+                <hr>
+                <img src="./images/Demographics.jpeg" loading="lazy" width="80%">
+            </section>
+            <section class="card">
+                <h3>statistical data</h3>
+                <hr>
+                <img src="./images/StatisticalData.png" loading="lazy" width="80%">
+            </section>
+            <section class="card">
+                <h3>events</h3>
+                <hr>
+                <img src="./images/Events.jpeg" loading="lazy" width="80%">
+            </section>
+            <section class="card">
+                <h3>calendar</h3>
+                <hr>
+                <img src="./images/Calendar.jpeg" loading="lazy" width="80%">
+            </section>
+        </div>
+        <div id="discover-main-area">
+            <picture>
+                <!-- <img loading="lazy" src="//via.placeholder.com/600x400/" alt="placeholder image" > -->
+                <img loading="lazy" src="./images/LocalPhotos1.jpeg" alt="placeholder image" width="500" height="280">
+            </picture>
+            <picture>
+                <img loading="lazy" src="./images/LocalPhotos2.jpeg" alt="placeholder image" width="500" height="280">
+            </picture>
+            <picture>
+                <img loading="lazy" src="./images/LocalPhotos3.jpeg" alt="placeholder image" width="500" height="280">
+            </picture>
+            <picture>
+                <img loading="lazy" src="./images/LocalPhotos4.jpeg" alt="placeholder image" width="500" height="280">
+            </picture>
+            <picture>
+                <img loading="lazy" src="./images/LocalPhotos5.jpeg" alt="placeholder image" width="500" height="280">
+            </picture>
+            <picture>
+                <img loading="lazy" src="./images/LocalPhotos6.jpeg" alt="placeholder image" width="500" height="280">
+            </picture>
+        </div>
+    </main>
+    <footer>
+        <p></p>
+        <p>WDD230-Chamber-Project</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="./scripts/getdates.js"></script>
+    <script src="./scripts/menu-toggle.js"></script>
+    <script src="./scripts/mode-switch.js"></script>
+    <script src="./scripts/visit-message.js"></script>
+</body>
+</html>

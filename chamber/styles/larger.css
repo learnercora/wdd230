@@ -44,5 +44,13 @@
     .switch > span {
         color: #000;
     }
-
+    #discover-main-area {
+        grid-column: 2/4;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    picture img:hover {
+        box-shadow: 0 0 50px #333;
+    }
 }
