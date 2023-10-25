@@ -41,7 +41,7 @@
         display: inline-block;
         width: 32%;
     }
-    .switch > span {
+    .switch .text {
         color: #000;
     }
     #discover-main-area {
