@@ -236,3 +236,117 @@ input:checked + .slider:before {
   margin-top: 10px;
   border-radius: 5px;
 }
+
+form {
+  margin: 2rem 1rem;
+}
+form legend {
+  color: var(--secondary-color);
+  border: double var(--accent1-color);
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  color: var(--accent1-color);
+  padding: .5rem 8rem;
+  font-weight: 800;
+  font-size: 20px;
+}
+form fieldset {
+  border-radius: 10px;
+  border: double;
+}
+
+form label.top {
+  display: block;
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: left;
+}
+form label.top input, 
+form label.top select {
+  display: block;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid var(--accent2-color);
+  /* border-radius: 4px; */
+  padding: 0.75rem;
+  color: var(--primary-color);
+  width: 100%;
+  max-width: -webkit-fill-available;;
+  background-color: transparent;
+}
+
+form .submitBtn {
+  background-color: var(--accent3-color);
+  color: var(--primary-color);
+  margin: 1rem 2rem;
+  padding: 2rem 5rem;
+  font-size: 2rem;
+  border: 10px solid var(--accent2-color);
+  border-radius: 30px;
+  font-weight: 900;
+}
+
+#thankyou {
+  margin: 5rem auto;
+  grid-column: 1/4;
+  font-size: 50px;
+}
+
+
+/* table */
+thead tr:first-child th {
+	/* background-color: var(--accent2-color); */
+	color: var(--secondary-color);
+  border: none;
+  color: var(--secondary-color);
+}
+thead tr :not(th:first-child) {
+	background-color: var(--secondary-color);
+	color: #fff;
+}
+table {
+  grid-column: 2/4;
+	margin: 2rem auto;
+	/* border: thin solid grey; */
+	border-collapse: collapse;
+  height: 30%;
+  width: max-content;
+}
+
+caption {
+	padding: 15px;
+	caption-side: bottom;
+	color: #000;
+	font-size: .85rem;
+}
+thead tr:first-child th::before,
+thead tr:first-child th::after {
+  content: " ★★★ ";
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid grey;
+}
+
+th {
+	font-size: larger;
+}
+
+td {
+	text-align: center;
+  width: 5rem;
+}
+
+tbody td:nth-child(even) {
+	background-color: var(--accent3-color);
+}
+tbody th {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.membership-benefits {
+  display: none;
+}

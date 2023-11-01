@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Lin, Chih-Yun] - WDD 230 - Web Frontend Development - Chamber of Commerce</title>
+    <meta name="author" content="Lin, Chih-Yun">
+    <meta name="description" content="WDD 230 Web Frontend Development - Lin, Chih-Yun - Chamber of Commerce Website.">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="icon" href="chamber-favicon.ico">
+    <meta property="og:title" content="WDD230 Assignment">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/canonical-page">
+    <meta property="og:image" content="https://cdn-cw-english.cwg.tw/article/202308/article-64dc7e37cbe1f.jpg">
+</head>
+<body>
+    <header>
+        <h1>HsinChu Root Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <button id="menu-button" title="menu-button"></button>
+        <div class="switch">
+            <label for="mode" class="mode-label">
+                <span class="text">Dark Mode</span>
+                <input type="checkbox" id="mode">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        
+        <div class="navigation">
+            <a href="#">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="">Directiry</a>
+            <a href="">Join</a>
+        </div>
+    </nav>
+    <main>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Join Us</legend>
+                <label class="top">First Name* 
+                    <input type="text" id="fname" name="fname" required>
+                </label>
+                <label class="top">Last Name* 
+                    <input type="text" id="lname" name="lname" required>
+                </label>
+                <label class="top">Title / Position 
+                    <input type="text" id="title" name="title" required pattern="[A-Za-z -]{7,}">
+                </label>
+                <label class="top">Email* 
+                    <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+                </label>
+                <label class="top">Mobile Phone*
+                    <input type="tel" id="phone" name="phone" required>
+                </label>
+                <label class="top">Business/Organization's Name* 
+                    <input type="text" id="organization" name="organization" required>
+                </label>
+                <label class="top">Membership Level
+                    <select name="mlevel">
+                        <option value="">Please Select</option>
+                        <option value="np">NP Membership is for non profit organizations and there is no fee.</option>
+                        <option value="br">Bronze Membership</option>
+                        <option value="si">Silver Membership</option>
+                        <option value="go">Gold Membership</option>
+                    </select>
+                </label>
+                <label class="top">Business/Organization's Description 
+                    <input type="text" id="orgdescription" name="orgdescription">
+                </label>
+                <label class="top">Timestamp
+                    <input readonly id="timestamp" name="timestamp"> <!-- type="hidden" -->
+                </label>
+            </fieldset>
+            <input type="submit" class="submitBtn" value="Can't wait to Join">
+        </form>
+        <table class="membership-benefits">
+            <caption>Table: Membership level benefits</caption>
+            <thead>
+                <tr>
+                    <th colspan="5" scope="colgroup">Find What Yon Need</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th scope="col">NP</th>
+                    <th scope="col">Bronze</th>
+                    <th scope="col">Silver</th>
+                    <th scope="col">Gold</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <th>Cost</th>
+                  <td>❌</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                </tr>
+                <tr>
+                    <th>Special Events</th>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th>Training</th>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th>Advertising</th>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th>Event Discounts</th>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </main>
+    <footer>
+        <p></p>
+        <p>WDD230-Chamber-Project</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="./scripts/getdates.js"></script>
+    <script src="./scripts/menu-toggle.js"></script>
+    <script src="./scripts/mode-switch.js"></script>
+    <!-- <script src="scripts/windchill.js"></script> -->
+    <script src="scripts/form.js"></script>
+</body>
+</html>

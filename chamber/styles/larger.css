@@ -53,4 +53,13 @@
     picture img:hover {
         box-shadow: 0 0 50px #333;
     }
+
+    form {
+        /* grid-column: 2/3; */
+        margin: 2rem 4rem;
+    }
+
+    .membership-benefits {
+        display: inline-block;
+    }
 }
