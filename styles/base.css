@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=PT+Sans&display=swap');
 
+:root {
+    --primary-color: #7d1022   ;
+    --secondary-color: #fff ;
+    --accent1-color: darkblue;
+    --accent2-color: #d3f0f5;
+    --accent3-color: #cd6b7c;
+    --accent4-color: darkgrey;
+}
+
 body {
     height: 100vh;
     /* font-family: 'Lora', serif; */
@@ -7,8 +16,8 @@ body {
 }
 
 header {
-    background: #7d1022;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--secondary-color);
     padding: 1rem;
     text-align: center;
 }
@@ -21,26 +30,26 @@ header > img, header > h1{
     padding: 0px 20px;
 }
 nav > .navigation {
-    background: #fff;
+    background: var(--secondary-color);
     text-align: center;    
 }
 nav a {
     display: block;
     padding: 1rem 2rem;
     text-decoration: none;
-    color: darkblue;
-    background-color: #d3f0f5;
+    color: var(--accent1-color);
+    background-color: var(--accent2-color);
 }
 nav a:hover::before,
 nav a:hover::after {
 	content: "🍎";
 }
 nav a:hover {
-    background-color: #cd6b7c;
-    color: #d3f0f5;
+    background-color: var(--accent3-color);
+    color: var(--accent2-color);
 }
 .card {
-    border: solid 1px darkgrey;
+    border: solid 1px var(--accent4-color);
     border-radius: 4px;
 }
   
@@ -60,10 +69,10 @@ main .card {
     margin-bottom: 10px;
 }
 .card > h3 {
-    background-color: #7d1022;
+    background-color: var(--primary-color);
     padding: 4px 10px;
     margin-top: 0px;
-    color: #fff;
+    color: var(--secondary-color);
     text-align: center;
 }
 .card > p {
@@ -74,10 +83,10 @@ main li {
 }
   
 footer {
-    background: #7d1022;
+    background: var(--primary-color);
     padding: 8px;
     text-align: center;
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 #menu {
@@ -103,7 +112,7 @@ footer {
 	flex-direction: column;
 	list-style: none;
 	background-color: #333;
-	color: #fff;
+	color: var(--secondary-color);
 }
 .navigation a {
 	display: none;
@@ -138,13 +147,13 @@ footer {
     position: absolute;
     top: 30px;
     left: 30px;
-    /* background: radial-gradient(#fff, navy); */
+    /* background: radial-gradient(var(--secondary-color), navy); */
     /* border: 1px solid rgba(0,0,0,.75); */
     padding: 0.5rem;
-    box-shadow: 0 0 2rem #fff;
+    box-shadow: 0 0 2rem var(--secondary-color);
     opacity: 0.95;
     border-radius: 20px;
-    color: #fff;
+    color: var(--secondary-color);
     text-shadow: 2px 2px black;
 }
 
