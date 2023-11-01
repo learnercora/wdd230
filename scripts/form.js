@@ -33,7 +33,7 @@ function checkSamePassword() {
 		forpw2message.style.display = "block";
 		pw2.style.backgroundColor = "#fff0f3";
 		pw2.value = "";
-		// pw2.focus();
+		pw2.focus();
 	} else {
 		forpw2message.style.display = "none";
 		pw2.style.backgroundColor = "#fff";
