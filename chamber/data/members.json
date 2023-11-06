@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "names": "names1",
+            "addresses": "addresses1",
+            "phone": "phone",
+            "webUrl": "web1.web.com",
+            "imageFileName": "",
+            "membershipLevel": "Golden",
+            "buildYear": "2000"
+        },
+        {
+            "names": "names1",
+            "addresses": "addresses1",
+            "phone": "phone",
+            "webUrl": "web1.web.com",
+            "imageFileName": "",
+            "membershipLevel": "Golden",
+            "buildYear": "2000"
+        },
+        {
+            "names": "names1",
+            "addresses": "addresses1",
+            "phone": "phone",
+            "webUrl": "web1.web.com",
+            "imageFileName": "",
+            "membershipLevel": "Golden",
+            "buildYear": "2000"
+        },
+        {
+            "names": "names1",
+            "addresses": "addresses1",
+            "phone": "phone",
+            "webUrl": "web1.web.com",
+            "imageFileName": "",
+            "membershipLevel": "Golden",
+            "buildYear": "2000"
+        },
+        {
+            "names": "names1",
+            "addresses": "addresses1",
+            "phone": "phone",
+            "webUrl": "web1.web.com",
+            "imageFileName": "",
+            "membershipLevel": "Golden",
+            "buildYear": "2000"
+        },
+        {
+            "names": "names6",
+            "addresses": "addresses6",
+            "phone": "phone",
+            "webUrl": "",
+            "imageFileName": "",
+            "membershipLevel": "Golden",
+            "buildYear": "2000"
+        },
+        {
+            "names": "names7",
+            "addresses": "addresses7",
+            "phone": "phone",
+            "webUrl": "",
+            "imageFileName": "",
+            "membershipLevel": "Golden",
+            "buildYear": "2000"
+        }
+    ]
+}
