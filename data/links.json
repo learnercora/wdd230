@@ -11,7 +11,7 @@
         },
         {
             "lesson":"02",
-            "link:": [
+            "link": [
                 {
                     "url": "./lesson02/design.html",
                     "title": "Design"
@@ -28,7 +28,7 @@
         },
         {
             "lesson":"03",
-            "link:": [
+            "link": [
                 {
                     "url": "lesson03/images/w3sresult-combinator.png",
                     "title": "CSS Combinators"
@@ -49,7 +49,7 @@
         },
         {
             "lesson":"04",
-            "link:": [
+            "link": [
                 {
                     "url": "https://codepen.io/learnercora/pen/abPjMEb",
                     "title": "CSS Pseudo-Classes"
@@ -62,7 +62,7 @@
         },
         {
             "lesson":"05",
-            "link:": [
+            "link": [
                 {
                     "url": "lesson05/bom.html",
                     "title": "Book of Mormon Favorite Chapters Application"
@@ -71,7 +71,7 @@
         },
         {
             "lesson":"06",
-            "link:": [
+            "link": [
                 {
                     "url": "lesson03/images/landscape.webp",
                     "title": "WebP"
@@ -84,7 +84,7 @@
         },
         {
             "lesson":"07",
-            "link:": [
+            "link": [
                 {
                     "url": "lesson03/lazyload.html",
                     "title": "Lazy Load"
@@ -97,7 +97,7 @@
         },
         {
             "lesson":"08",
-            "link:": [
+            "link": [
                 {
                     "url": "lesson08/tablebuild.html",
                     "title": "HTML Tables"
@@ -114,7 +114,7 @@
         },
         {
             "lesson":"09",
-            "link:": [
+            "link": [
                 {
                     "url": "lesson05/new-ward-members.json",
                     "title": "JSON"
@@ -127,7 +127,7 @@
         },
         {
             "lesson":"10",
-            "link:": [
+            "link": [
                 {
                     "url": "",
                     "title": ""
