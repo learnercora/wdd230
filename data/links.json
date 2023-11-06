@@ -1,5 +1,14 @@
 {
-    "lessons": [ 
+    "lessons": [
+        {
+            "lesson":"01",
+            "link": [
+                {
+                    "url": "./lesson01/holygrail.html",
+                    "title": "Holygrail"
+                }
+            ]
+        },
         {
             "lesson":"02",
             "link:": [
