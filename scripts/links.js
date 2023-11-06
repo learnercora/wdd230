@@ -12,21 +12,33 @@ async function getLinks() {
 }
 
 const displayLinks = (weeks) => {
+    //clear original menu
+    menu.innerHTML = '';
+
     weeks.forEach( (week) => {
-        let ulE = document.createElement("ul");
+        // create li
         let liE = document.createElement("li");
-        let aE = document.createElement("a");
 
-        liE.innerHTML = `${week.lesson}`;
-        console.log(week)
-        // aE.setAttribute("href", "123");
-        // aE.setAttribute("target", "_blank");
+        liE.innerHTML = `Week ${week.lesson}: `;
 
+        // create a
+        week.links.forEach( (link, index) => {
+            let aE = document.createElement("a");
 
-        ulE.appendChild(liE);
-        ulE.appendChild(aE);
+            aE.innerHTML = link.title;            
+            aE.setAttribute("href", link.url);
+            aE.setAttribute("target", "_blank");
+            
+            liE.appendChild(aE);
+            
+            // add "|"" between link
+            if ( week.links.length - index > 1) {
+                liE.appendChild(document.createTextNode(" | "));;
+            }
 
-        menu.appendChild(ulE);
+            
+        })
+        menu.appendChild(liE);
     });
 }
 
