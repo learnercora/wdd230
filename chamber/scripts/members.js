@@ -13,30 +13,37 @@ async function getCompanies() {
 const displayCompanies = (companies) => {
     companies.forEach( (company) => {
         console.log(company);
-        // create li
-        // let liE = document.createElement("li");
+        // create section
+        let sectionE = document.createElement("section");
+        let imgE = document.createElement("img");
+        let h2E = document.createElement("h2");
+        let p1E = document.createElement("p");
+        let p2E = document.createElement("p");
+        let aE = document.createElement("a");
 
-        // liE.innerHTML = `Week ${company.lesson}: `;
+        imgE.setAttribute("src", `./images/${company.imageFileName}`);
+        imgE.setAttribute("alt", `company logo of ${company.names}`);
+        imgE.setAttribute("loading", "lazy");
+        imgE.setAttribute("width", "200px");
+        imgE.setAttribute("height", "250px");
 
-        // create a
-        // company.links.forEach( (link, index) => {
-        //     let aE = document.createElement("a");
+        h2E.innerHTML = company.names;
 
-        //     aE.innerHTML = link.title;            
-        //     aE.setAttribute("href", link.url);
-        //     aE.setAttribute("target", "_blank");
-            
-        //     liE.appendChild(aE);
-            
-        //     // add "|"" between link
-        //     if ( company.links.length - index > 1) {
-        //         liE.appendChild(document.createTextNode(" | "));;
-        //     }
+        p1E.innerHTML = `${company.addresses}`;
+        p2E.innerHTML = `${company.phone}`;
 
-            
-        // })
-        // companiesE.appendChild(liE);
+        aE.innerHTML = `${company.names} Website`;
+        aE.setAttribute("href", company.webUrl);
+        aE.setAttribute("target", "_blank");
+
+        sectionE.appendChild(imgE);
+        sectionE.appendChild(h2E);
+        sectionE.appendChild(p1E);
+        sectionE.appendChild(p2E);
+        sectionE.appendChild(aE);
+        companiesE.appendChild(sectionE);
     });
+    
 }
 
 getCompanies();
