@@ -412,7 +412,7 @@ tbody th {
 .show-in-list section:nth-child(odd) {
 	background-color: var(--accent1-color);
 }
-img {
+.show-in-grid img {
 	height: 100px;
 	max-width: 100%;
 }
