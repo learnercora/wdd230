@@ -1,67 +1,67 @@
 {
     "companies": [
         {
-            "names": "names1",
-            "addresses": "addresses1",
-            "phone": "phone",
-            "webUrl": "web1.web.com",
-            "imageFileName": "",
+            "names": "TSMC台積電",
+            "addresses": "No. 8, Li-Hsin Rd. 6, Hsinchu Science Park,Hsin-Chu 300, Taiwan, R.O.C.",
+            "phone": "03-5636688",
+            "webUrl": "https://www.tsmc.com",
+            "imageFileName": "./images/company1-tsmc",
             "membershipLevel": "Golden",
-            "buildYear": "2000"
+            "buildYear": "1987"
         },
         {
-            "names": "names1",
-            "addresses": "addresses1",
-            "phone": "phone",
-            "webUrl": "web1.web.com",
-            "imageFileName": "",
+            "names": "AUO Corporation友達光電",
+            "addresses": "No.1,Li-Hsin Rd 2 .,Hsinchu Science Park,Hsinchu,Taiwan,R.O.C.",
+            "phone": "03-5008800",
+            "webUrl": "https://www.auo.com/zh-TW",
+            "imageFileName": "./images/company2-auo",
             "membershipLevel": "Golden",
-            "buildYear": "2000"
+            "buildYear": "1996"
         },
         {
-            "names": "names1",
-            "addresses": "addresses1",
-            "phone": "phone",
-            "webUrl": "web1.web.com",
-            "imageFileName": "",
+            "names": "UMC聯華電子",
+            "addresses": "HSINCHU SCIENCE PARK HSINCHU CITY, TAIWAN, R.O.C.",
+            "phone": "03-5782258",
+            "webUrl": "https://www.umc.com/zh-TW/Home/Index",
+            "imageFileName": "./images/company3-umc",
             "membershipLevel": "Golden",
-            "buildYear": "2000"
+            "buildYear": "1980"
         },
         {
-            "names": "names1",
-            "addresses": "addresses1",
-            "phone": "phone",
-            "webUrl": "web1.web.com",
-            "imageFileName": "",
+            "names": "KYEC京元電子",
+            "addresses": "No. 81, Section 2, Gongdaowu Road, Hsin-Chu 300, Taiwan, R.O.C.",
+            "phone": "03-5777323",
+            "webUrl": "https://www.kyec.com.tw/",
+            "imageFileName": "./images/company4-kyec",
             "membershipLevel": "Golden",
-            "buildYear": "2000"
+            "buildYear": "1987"
         },
         {
-            "names": "names1",
-            "addresses": "addresses1",
-            "phone": "phone",
-            "webUrl": "web1.web.com",
-            "imageFileName": "",
+            "names": "PTI力成科技",
+            "addresses": "No. 10, Datong Rd., Hsinchu Industrial Park,HuKou Shiang, Hsinchu, Taiwan, R.O.C.",
+            "phone": "03-5980300",
+            "webUrl": "https://www.pti.com.tw/zh",
+            "imageFileName": "./images/company5-pti",
             "membershipLevel": "Golden",
-            "buildYear": "2000"
+            "buildYear": "1997"
         },
         {
-            "names": "names6",
-            "addresses": "addresses6",
-            "phone": "phone",
-            "webUrl": "",
-            "imageFileName": "",
+            "names": "READYTEK瑞昱科技",
+            "addresses": "6 F.-15, No. 26, Ln. 321, Yangguang St., Neihu Dist., Taipei City 114711, Taiwan (R.O.C.)",
+            "phone": "02-27978185",
+            "webUrl": "https://www.realtek.com/zh-tw/",
+            "imageFileName": "./images/company6-realtek",
             "membershipLevel": "Golden",
-            "buildYear": "2000"
+            "buildYear": "1987"
         },
         {
-            "names": "names7",
-            "addresses": "addresses7",
-            "phone": "phone",
-            "webUrl": "",
-            "imageFileName": "",
+            "names": "MACRONIX旺宏電子",
+            "addresses": "No.16, Li-Hsin Road, Hsinchu Science ParkHsinchu, Taiwan, R.O.C.",
+            "phone": "03-5786688",
+            "webUrl": "https://www.mxic.com.tw/zh-tw/Pages/default.aspx",
+            "imageFileName": "./images/company7-mxic",
             "membershipLevel": "Golden",
-            "buildYear": "2000"
+            "buildYear": "1989"
         }
     ]
 }
