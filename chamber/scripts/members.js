@@ -41,6 +41,7 @@ const displayCompanies = (companies) => {
         sectionE.appendChild(p1E);
         sectionE.appendChild(p2E);
         sectionE.appendChild(aE);
+        
         companiesE.appendChild(sectionE);
     });
     

@@ -5,7 +5,7 @@
             "addresses": "No. 8, Li-Hsin Rd. 6, Hsinchu Science Park,Hsin-Chu 300, Taiwan, R.O.C.",
             "phone": "03-5636688",
             "webUrl": "https://www.tsmc.com",
-            "imageFileName": "company1-tsmc",
+            "imageFileName": "company1-tsmc.png",
             "membershipLevel": "Golden",
             "buildYear": "1987"
         },
@@ -14,7 +14,7 @@
             "addresses": "No.1,Li-Hsin Rd 2 .,Hsinchu Science Park,Hsinchu,Taiwan,R.O.C.",
             "phone": "03-5008800",
             "webUrl": "https://www.auo.com/zh-TW",
-            "imageFileName": "company2-auo",
+            "imageFileName": "company2-auo.png",
             "membershipLevel": "Golden",
             "buildYear": "1996"
         },
@@ -23,7 +23,7 @@
             "addresses": "HSINCHU SCIENCE PARK HSINCHU CITY, TAIWAN, R.O.C.",
             "phone": "03-5782258",
             "webUrl": "https://www.umc.com/zh-TW/Home/Index",
-            "imageFileName": "company3-umc",
+            "imageFileName": "company3-umc.png",
             "membershipLevel": "Golden",
             "buildYear": "1980"
         },
@@ -32,7 +32,7 @@
             "addresses": "No. 81, Section 2, Gongdaowu Road, Hsin-Chu 300, Taiwan, R.O.C.",
             "phone": "03-5777323",
             "webUrl": "https://www.kyec.com.tw/",
-            "imageFileName": "company4-kyec",
+            "imageFileName": "company4-kyec.jpeg",
             "membershipLevel": "Golden",
             "buildYear": "1987"
         },
@@ -41,7 +41,7 @@
             "addresses": "No. 10, Datong Rd., Hsinchu Industrial Park,HuKou Shiang, Hsinchu, Taiwan, R.O.C.",
             "phone": "03-5980300",
             "webUrl": "https://www.pti.com.tw/zh",
-            "imageFileName": "company5-pti",
+            "imageFileName": "company5-pti.png",
             "membershipLevel": "Golden",
             "buildYear": "1997"
         },
@@ -50,7 +50,7 @@
             "addresses": "6 F.-15, No. 26, Ln. 321, Yangguang St., Neihu Dist., Taipei City 114711, Taiwan (R.O.C.)",
             "phone": "02-27978185",
             "webUrl": "https://www.realtek.com/zh-tw/",
-            "imageFileName": "company6-realtek",
+            "imageFileName": "company6-realtek.png",
             "membershipLevel": "Golden",
             "buildYear": "1987"
         },
@@ -59,7 +59,7 @@
             "addresses": "No.16, Li-Hsin Road, Hsinchu Science ParkHsinchu, Taiwan, R.O.C.",
             "phone": "03-5786688",
             "webUrl": "https://www.mxic.com.tw/zh-tw/Pages/default.aspx",
-            "imageFileName": "company7-mxic",
+            "imageFileName": "company7-mxic.png",
             "membershipLevel": "Golden",
             "buildYear": "1989"
         }
