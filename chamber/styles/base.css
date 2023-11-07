@@ -360,8 +360,18 @@ tbody th {
   margin: 1rem auto;
 }
 .directory-menu button{
+  border: 3px solid var(--accent1-color);
+  border-radius: 10px;
   margin: 0 1rem;
   padding: .5rem 1rem;
+}
+.directory-menu button:hover,
+.directory-menu button:focus {
+  border-color: var(--accent2-color);
+}
+.directory-menu button img {
+  width: 3rem;
+  height: 3rem;
 }
 .show-in-grid {
   display: grid;
@@ -404,5 +414,5 @@ tbody th {
 }
 img {
 	height: 100px;
-	max-width: 100%; /* Images are jerks - Seattle*/
+	max-width: 100%;
 }
