@@ -350,3 +350,59 @@ tbody th {
 .membership-benefits {
   display: none;
 }
+
+/* directory */
+#directory-main {
+  display: block;
+  background: #fff !important;
+}
+.directory-menu {
+  margin: 1rem auto;
+}
+.directory-menu button{
+  margin: 0 1rem;
+  padding: .5rem 1rem;
+}
+.show-in-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+.show-in-grid section {
+	border: 3px solid var(--accent3-color);
+  border-radius: 5px;
+	padding: 2rem 1rem;
+  margin: 1rem;
+  box-shadow: 0px 0px 10px black;
+}
+#directory-main section:hover {
+  box-shadow: 0px 0px 20px black;
+}
+.show-in-list {
+	display: flex;
+	flex-direction: column;
+  margin-bottom: 2rem;
+}
+.show-in-list section {
+	width: 80%;
+  border: none !important;
+  margin: 0.2rem auto;
+  padding: .5rem 0;
+  text-align: left;
+}
+.show-in-list section h3,
+.show-in-list section a {
+  text-align: left;
+  margin: 0 .5rem;
+}
+.show-in-list section img {
+	display: none;
+}
+.show-in-list section:nth-child(odd) {
+	background-color: var(--accent1-color);
+}
+img {
+	height: 100px;
+	max-width: 100%; /* Images are jerks - Seattle*/
+}

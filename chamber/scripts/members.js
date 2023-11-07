@@ -12,11 +12,10 @@ async function getCompanies() {
 
 const displayCompanies = (companies) => {
     companies.forEach( (company) => {
-        console.log(company);
-        // create section
+        // create elements
         let sectionE = document.createElement("section");
         let imgE = document.createElement("img");
-        let h2E = document.createElement("h2");
+        let h2E = document.createElement("h3");
         let p1E = document.createElement("p");
         let p2E = document.createElement("p");
         let aE = document.createElement("a");
@@ -24,15 +23,14 @@ const displayCompanies = (companies) => {
         imgE.setAttribute("src", `./images/${company.imageFileName}`);
         imgE.setAttribute("alt", `company logo of ${company.names}`);
         imgE.setAttribute("loading", "lazy");
-        imgE.setAttribute("width", "200px");
-        imgE.setAttribute("height", "250px");
+        imgE.style.maxWidth = "20rem";
 
         h2E.innerHTML = company.names;
 
         p1E.innerHTML = `${company.addresses}`;
         p2E.innerHTML = `${company.phone}`;
 
-        aE.innerHTML = `${company.names} Website`;
+        aE.innerHTML = `${company.webUrl}`;
         aE.setAttribute("href", company.webUrl);
         aE.setAttribute("target", "_blank");
 
@@ -41,10 +39,9 @@ const displayCompanies = (companies) => {
         sectionE.appendChild(p1E);
         sectionE.appendChild(p2E);
         sectionE.appendChild(aE);
-        
+
         companiesE.appendChild(sectionE);
     });
-    
 }
 
 getCompanies();
