@@ -1,5 +1,6 @@
 const baseURL = "https://learnercora.github.io/wdd230/chamber";
 const linksURL = "https://learnercora.github.io/wdd230/chamber/data/members.json";
+const darkmode = document.querySelector('input[type="checkbox"]');
 
 const companiesE = document.querySelector('#companies');
 
@@ -19,6 +20,8 @@ const displayCompanies = (companies) => {
         let p1E = document.createElement("p");
         let p2E = document.createElement("p");
         let aE = document.createElement("a");
+
+        sectionE.classList.add("card");
 
         imgE.setAttribute("src", `./images/${company.imageFileName}`);
         imgE.setAttribute("alt", `company logo of ${company.names}`);
