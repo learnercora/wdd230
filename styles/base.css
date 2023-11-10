@@ -164,4 +164,9 @@ footer {
 	font-size: 2rem;
 	font-family:"Great Vibes", serif;
 }
-
+.current-weather,
+.current-weather * {
+    /* border: solid 1px red; */
+    text-align: center;
+    vertical-align: middle;
+}
