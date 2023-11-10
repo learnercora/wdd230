@@ -45,7 +45,7 @@
                 <img src="images/wdd230-org-hero-l.webp" alt="Group Meeting Image" width="1500" height="750">
             </picture>
             <div class="herolabel">
-                <button>Join the Chamber</button>
+                <button><a href="join.html">Join the Chamber</a></button>
             </div>
         </div>
         <section  id="event" class="card">
@@ -54,6 +54,16 @@
         </section>
         <section class="card">
             <h3>Weather</h3>
+            <hr>
+            <h4>CURRENT</h4>
+            <div class="current-weather">
+                <img id="weather-icon" src="" alt="">
+                <span id="current-temp"></span>
+                <p id="temp-desc"></p>
+            </div>
+            <hr>
+            <h4>3 DAY FORECAST</h4>
+            <div id="forecast-weather"></div>
             <hr>
             <div>Temperature:<span id="temperature">45</span> °F</div>
             <div>Wind Speed:<span id="windspeed">4.8</span> mph</div>
@@ -75,5 +85,6 @@
     <script src="./scripts/menu-toggle.js"></script>
     <script src="./scripts/mode-switch.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
