@@ -11,7 +11,6 @@ async function apiFetchCurrentWeather() {
         const response = await fetch(currentWeatherUrl);
         if(response.ok){
             const data = await response.json();
-            // console.log(data);
             displayCurrentWeather(data);
         } else {
             throw Error(await response.text());
@@ -25,7 +24,6 @@ async function apiFetchForecastWeather() {
         const response = await fetch(forcastWeatherUrl);
         if(response.ok){
             const data = await response.json();
-            // console.log(data);
             displayForecastWeather(data);
         } else {
             throw Error(await response.text());
@@ -48,7 +46,7 @@ function displayCurrentWeather(data) {
 function displayForecastWeather(data) {
     let orgrinList = data.list;
     orgrinList.forEach( (data, index) => {
-        if( index % 8 == 0 ){
+        if( data.dt_txt.split(" ")[1].split(":")[0] == "09" ){
              // create elements
             let sectionE = document.createElement("section");
             let h4E = document.createElement("h4");
@@ -56,7 +54,6 @@ function displayForecastWeather(data) {
             let p1E = document.createElement("p");
 
             let date = data.dt_txt.split(" ")[0].substring(5);
-            // console.log(data.dt_txt.split(" ")[0]);
             h4E.textContent = date;
             const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
             imgE.setAttribute('src', iconsrc);
