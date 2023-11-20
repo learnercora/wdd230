@@ -64,7 +64,7 @@
     }
     /* directory html */
     #directory-main section {
-      height: 18rem;
+      height: 22rem;
     }
     #directory-main .show-in-list section {
         display: grid;

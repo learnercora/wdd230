@@ -19,6 +19,8 @@ const displayCompanies = (companies) => {
         let h2E = document.createElement("h3");
         let p1E = document.createElement("p");
         let p2E = document.createElement("p");
+        let p3E = document.createElement("p");
+        let p4E = document.createElement("p");
         let aE = document.createElement("a");
 
         sectionE.classList.add("card");
@@ -30,8 +32,10 @@ const displayCompanies = (companies) => {
 
         h2E.innerHTML = company.names;
 
-        p1E.innerHTML = `${company.addresses}`;
-        p2E.innerHTML = `${company.phone}`;
+        p1E.innerHTML = `Membership Level: ${company.membershipLevel}`;
+        p2E.innerHTML = `${company.addresses}`;
+        p3E.innerHTML = `${company.phone}`;
+        p4E.innerHTML = `Build Year: ${company.buildYear}`;
 
         aE.innerHTML = `${company.webUrl}`;
         aE.setAttribute("href", company.webUrl);
@@ -41,6 +45,8 @@ const displayCompanies = (companies) => {
         sectionE.appendChild(h2E);
         sectionE.appendChild(p1E);
         sectionE.appendChild(p2E);
+        sectionE.appendChild(p3E);
+        sectionE.appendChild(p4E);
         sectionE.appendChild(aE);
 
         companiesE.appendChild(sectionE);
