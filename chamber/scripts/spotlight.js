@@ -7,8 +7,9 @@ const companiesE = document.querySelector('#spotlights');
 async function getCompanies() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    console.log(data.companies.filter((item)=> item.membershipLevel === "NP"));
-    displayRandomCompanies(data.companies, 3);
+    const GoldenOrSilverCompanies = data.companies.filter((item) => item.membershipLevel === "Golden" || item.membershipLevel === "Silver" );
+    //console.log(data.companies.filter((item) => item.membershipLevel === "Golden" || item.membershipLevel === "Silver" ));
+    displayRandomCompanies(GoldenOrSilverCompanies, 3);
 }
 
 const displayRandomCompanies = (companiesList, itemNum) => {
