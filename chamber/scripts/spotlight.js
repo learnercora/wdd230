@@ -7,7 +7,7 @@ const companiesE = document.querySelector('#spotlights');
 async function getCompanies() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    // console.log(data);
+    console.log(data.companies.filter((item)=> item.membershipLevel === "NP"));
     displayRandomCompanies(data.companies, 3);
 }
 
