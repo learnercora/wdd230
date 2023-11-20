@@ -36,6 +36,8 @@
     }
     #spotlights {
         grid-column: 1/4;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     #spotlights > div {
         display: inline-block;
@@ -76,7 +78,20 @@
         padding: 0 1rem;
         width: 80%;
     }
-    /* #directory-main .show-in-list section > p:nth-child(3) {
-        grid-column-start: 2;
-    } */
+    #spotlights > h3 {
+        grid-column: 1/4;
+    }
+    #spotlights > section {
+        padding: 10px 0;
+        height: 32rem;
+    }
+    #spotlights img {
+        width: 60%;
+    }
+    #spotlights .card {
+        border-right: none;
+        border-left: none;
+        border-radius: 20%;
+    }
+
 }

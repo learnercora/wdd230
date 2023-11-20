@@ -493,3 +493,14 @@ tbody th {
   font-size: 16px;
   cursor: pointer;
 }
+#spotlights > section {
+  padding: 10px 0;
+}
+/* #spotlights img {
+  width: 40%;
+} */
+#spotlights .card {
+  border-right: none;
+  border-left: none;
+  border-radius: 20%;
+}
