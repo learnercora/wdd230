@@ -408,6 +408,7 @@ tbody th {
 .show-in-list section a {
   text-align: left;
   margin: 0 .5rem;
+  line-height: 3rem;
 }
 .show-in-list section img {
 	display: none;
