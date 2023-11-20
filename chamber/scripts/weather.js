@@ -4,13 +4,16 @@ const tempDesc = document.querySelector("#temp-desc");
 const forecastWeatherE = document.querySelector('#forecast-weather');
 
 const currentWeatherUrl = "https://api.openweathermap.org/data/2.5/weather?lat=24.81&lon=120.97&units=metric&appid=a688831c2a7f3e05d05b5fc3c28b7210";
-const forcastWeatherUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=24.81&lon=120.97&units=metric&cnt=24&appid=a688831c2a7f3e05d05b5fc3c28b7210";
+const forcastWeatherUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=24.81&lon=120.97&units=metric&cnt=32&appid=a688831c2a7f3e05d05b5fc3c28b7210";
+let todayDate = ""
 
 async function apiFetchCurrentWeather() {
     try {
         const response = await fetch(currentWeatherUrl);
         if(response.ok){
             const data = await response.json();
+            // console.log(new Date(data.dt * 1000).getDate());
+            todayDate = new Date(data.dt * 1000).getDate();
             displayCurrentWeather(data);
         } else {
             throw Error(await response.text());
@@ -46,7 +49,9 @@ function displayCurrentWeather(data) {
 function displayForecastWeather(data) {
     let orgrinList = data.list;
     orgrinList.forEach( (data, index) => {
-        if( data.dt_txt.split(" ")[1].split(":")[0] == "09" ){
+        if( data.dt_txt.split(" ")[1].split(":")[0] == "09" && 
+        data.dt_txt.split(" ")[0].split("-")[2] !== todayDate.toString()) {
+            // console.log(data)
              // create elements
             let sectionE = document.createElement("section");
             let h4E = document.createElement("h4");
