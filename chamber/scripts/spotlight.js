@@ -13,7 +13,7 @@ async function getCompanies() {
 
 const displayRandomCompanies = (companiesList, itemNum) => {
     let randomList = [...companiesList].sort(()=> Math.random() > 0.5 ? 1 : -1).slice(0, itemNum);
-    console.log(randomList);
+    // console.log(randomList);
     // return randomList;
     randomList.forEach( (company) => {
         // create elements
