@@ -50,6 +50,9 @@ p {
   font-family: var(--paragraph-font);
   padding: 0 0.5em;
 }
+a {
+  text-decoration: none;
+}
 .card {
   border: solid 5px var(--secondary-color);
   border-radius: 20px;
@@ -384,7 +387,6 @@ tbody th {
 .show-in-list {
 	display: flex;
 	flex-direction: column;
-  margin-bottom: 2rem;
 }
 .show-in-list section {
 	width: 80%;
@@ -412,6 +414,44 @@ tbody th {
 
 .dark-mode-for-main {
   background : #011638 !important;
+}
+.dark-mode-for-main thead tr th,
+.dark-mode-for-main caption,
+.dark-mode-for-main label,
+.dark-mode-for-main h3,
+.dark-mode-for-main h4,
+.dark-mode-for-main p
+ {
+  color: var(--accent1-color);
+  /* border: solid red 1px; */
+}
+.dark-mode-for-main .card a {
+  background-color: var(--accent1-color);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.dark-mode-for-main #chamberBanner p {
+  color: var(--primary-color);
+}
+.dark-mode-for-main fieldset,
+.dark-mode-for-main #spotlights .card {
+  border-color: var(--accent1-color);
+}
+.dark-mode-for-main form label.top input, 
+.dark-mode-for-main form label.top select {
+  background-color: var(--accent1-color);
+}
+.dark-mode-for-main .show-in-list section:nth-child(odd) h3,
+.dark-mode-for-main .show-in-list section:nth-child(odd) p {
+	color: var(--primary-color);
+}
+.dark-mode-for-main .show-in-list section:nth-child(odd) a {
+  background-color: initial;
+  color: var(--primary-color);
+}
+.dark-mode-for-main .show-in-list section:nth-child(even) a {
+  background-color: initial;
+  color: var(--accent1-color);
 }
 .dark-mode-for-card{
   background-color: #2e294e !important;
@@ -492,4 +532,8 @@ tbody th {
   border-right: none;
   border-left: none;
   border-radius: 20%;
+}
+#discover-main-area p {
+  margin-top: 0px;
+  text-align: left;
 }
