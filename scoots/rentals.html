@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Lin, Chih-Yun] - WDD 230 - Web Frontend Development - Scoots</title>
+    <meta name="author" content="Lin, Chih-Yun">
+    <meta name="description" content="WDD 230 Web Frontend Development - Lin, Chih-Yun - Scoots Website.">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="icon" href="scoots-favicon.ico">
+    <meta property="og:title" content="WDD230 Final Website Project">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/canonical-page">
+    <meta property="og:image" content="https://www.allcruisehotels.com/wp-content/uploads/2018/01/san-blas-island-panama.jpg">
+</head>
+<body>
+    <header>
+        <h1>SCOOTS</h1>        
+    </header>
+    <nav>
+        <button id="menu-button" title="menu-button"></button>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="#">Rentals</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <main>
+        <table id="rental-price-table">
+            <!-- <caption>Table: Max Rental Pricing</caption> -->
+            <thead>
+                <tr>
+                    <th colspan="6" scope="colgroup">Max Rental Pricing</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th colspan="2" scope="col">Reservation</th>
+                    <th colspan="2" scope="col">Walk-In</th>
+                </tr>
+                <tr>
+                    <th>Rental Type</th>
+                    <th>Max. Persons</th>
+                    <th scope="col">Half Day(3 hrs)</th>
+                    <th scope="col">Full Day</th>
+                    <th scope="col">Half Day(3 hrs)</th>
+                    <th scope="col">Full Day</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <th>~Honda Metro Scooter</th>
+                  <td>1</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+            </tbody>
+
+        </table>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <h3>CONTACT INFORMATION</h3>
+            <p>Email: service@scoots.com</p>
+            <p>Phone: +886 12345678</p>
+        </div>
+        <div class="location-info">
+            <h3>LOCATIONS</h3>
+            <p>Carretera Costera km 2.1,nCozumel, Q.Roo., México, 77600</p>
+            <p>Calle 22 de Enero No. 261 Col. Centro. Chetumal, Quintana Roo 77000 Mexico</p>
+        </div>
+        <div class="social-media-links">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="./images/facebook.png" alt="facebook icon">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="./images/instagram.png" alt="instagram icon">
+            </a> 
+            <a href="https://twitter.com/?lang=zh-Hant" target="_blank">
+                <img src="./images/twitter.png" alt="twitter icon">
+            </a>
+        </div>
+        <p>WDD230-Scoots-Project ©2023 Lin, Chih-Yun</p>
+    </footer>
+    <script src="./scripts/menu-toggle.js"></script>
+    <script src="scripts/rental-options.js"></script>
+</body>
+</html>

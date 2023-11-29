@@ -1,0 +1,82 @@
+{
+    "rentalPricing": [
+        {
+            "rentalType": "~Honda Metro Scooter",
+            "maxPerson": "1",
+            "reservation": {
+                "halfDay3h": "$20",
+                "fullDay": "$30"
+            },
+            "walkIn": {
+                "halfDay3h": "$25",
+                "fullDay": "$35"
+            },
+            "imageFileUrl": "./images/honda-metro-scooter-image.jpeg"
+        },
+        {
+            "rentalType": "~Honda Dio Scooter",
+            "maxPerson": "2",
+            "reservation": {
+                "halfDay3h": "$30",
+                "fullDay": "$40"
+            },
+            "walkIn": {
+                "halfDay3h": "$35",
+                "fullDay": "$45"
+            },
+            "imageFileUrl": "./images/honda-metro-scooter-image.jpeg"
+        },
+        {
+            "rentalType": "~Honda PCX150 Scooter",
+            "maxPerson": "2",
+            "reservation": {
+                "halfDay3h": "$40",
+                "fullDay": "$50"
+            },
+            "walkIn": {
+                "halfDay3h": "$45",
+                "fullDay": "$55"
+            },
+            "imageFileUrl": "./images/honda-pcx150-scooter-image.jpeg"
+        },
+        {
+            "rentalType": "Honda Pioneer ATV",
+            "maxPerson": "4",
+            "reservation": {
+                "halfDay3h": "$50",
+                "fullDay": "$70"
+            },
+            "walkIn": {
+                "halfDay3h": "$60",
+                "fullDay": "$80"
+            },
+            "imageFileUrl": "./images/honda-pioneer-atv-image.jpeg"
+        },
+        {
+            "rentalType": "Jeep Wrangler - 4 door with a/c",
+            "maxPerson": "5",
+            "reservation": {
+                "halfDay3h": "$70",
+                "fullDay": "$100"
+            },
+            "walkIn": {
+                "halfDay3h": "$85",
+                "fullDay": "$125"
+            },
+            "imageFileUrl": "./images/jeep-wrangler-4door-with-a:c-image.jpeg"
+        },
+        {
+            "rentalType": "Jeep Wrangler - 2 door",
+            "maxPerson": "4",
+            "reservation": {
+                "halfDay3h": "$60",
+                "fullDay": "$85"
+            },
+            "walkIn": {
+                "halfDay3h": "$70",
+                "fullDay": "$90"
+            },
+            "imageFileUrl": "./images/jeep-wrangler-2door-image.jpeg"
+        }
+    ]
+}
