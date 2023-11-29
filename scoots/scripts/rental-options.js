@@ -1,56 +1,53 @@
 const baseURL = "https://learnercora.github.io/wdd230/scoots";
 const linksURL = "https://learnercora.github.io/wdd230/scoots/data/rental-options.json";
 
-const tableE = document.querySelector('#rental-price-table');
-console.log(tableE)
+const rentalTbodyE = document.querySelector('#rental-price-table-tbody');
 
-// async function getCompanies() {
-//     const response = await fetch(linksURL);
-//     const data = await response.json();
-//     // console.log(data);
-//     displayCompanies(data.companies);
-// }
+async function getRentalInfo() {
+    const response = await fetch(linksURL);
+    const data = await response.json();
+    // console.log(data.rentalPricing);
+    displayRentalOptions(data.rentalPricing);
+}
 
-// const displayCompanies = (companies) => {
-//     companies.forEach( (company) => {
-//         // create elements
-//         let sectionE = document.createElement("section");
-//         let imgE = document.createElement("img");
-//         let h2E = document.createElement("h3");
-//         let p1E = document.createElement("p");
-//         let p2E = document.createElement("p");
-//         let p3E = document.createElement("p");
-//         let p4E = document.createElement("p");
-//         let aE = document.createElement("a");
+const displayRentalOptions = (rentals) => {
+    // console.log(rentals);
+    rentals.forEach( (rental) => {
+        // create elements
+        let trE = document.createElement("tr");
+        let th1E = document.createElement("th");
+        let imgE = document.createElement("img");
+        let th2E = document.createElement("th");
+        let td1E = document.createElement("td");
+        let td2E = document.createElement("td");
+        let td3E = document.createElement("td");
+        let td4E = document.createElement("td");
+        let td5E = document.createElement("td");
 
-//         sectionE.classList.add("card");
+        imgE.setAttribute("src", rental.imageFileUrl);
+        imgE.setAttribute("alt", `sample image of ${rental.rentalType}`);
+        imgE.setAttribute("loading", "lazy");
+        imgE.style.width = "300px";
 
-//         imgE.setAttribute("src", `./images/${company.imageFileName}`);
-//         imgE.setAttribute("alt", `company logo of ${company.names}`);
-//         imgE.setAttribute("loading", "lazy");
-//         imgE.style.maxWidth = "20rem";
+        th2E.innerHTML = rental.rentalType;
+        td1E.innerHTML = rental.maxPerson;
+        td2E.innerHTML = rental.reservation.halfDay3h;
+        td3E.innerHTML = rental.reservation.fullDay;
+        td4E.innerHTML = rental.walkIn.halfDay3h;
+        td5E.innerHTML = rental.walkIn.fullDay;
 
-//         h2E.innerHTML = company.names;
+        th1E.appendChild(imgE);
 
-//         p1E.innerHTML = `Membership Level: ${company.membershipLevel}`;
-//         p2E.innerHTML = `${company.addresses}`;
-//         p3E.innerHTML = `${company.phone}`;
-//         p4E.innerHTML = `Build Year: ${company.buildYear}`;
+        trE.appendChild(th1E);
+        trE.appendChild(th2E);
+        trE.appendChild(td1E);
+        trE.appendChild(td2E);
+        trE.appendChild(td3E);
+        trE.appendChild(td4E);
+        trE.appendChild(td5E);
 
-//         aE.innerHTML = `${company.webUrl}`;
-//         aE.setAttribute("href", company.webUrl);
-//         aE.setAttribute("target", "_blank");
+        rentalTbodyE.appendChild(trE);
+    });
+}
 
-//         sectionE.appendChild(imgE);
-//         sectionE.appendChild(h2E);
-//         sectionE.appendChild(p1E);
-//         sectionE.appendChild(p2E);
-//         sectionE.appendChild(p3E);
-//         sectionE.appendChild(p4E);
-//         sectionE.appendChild(aE);
-
-//         companiesE.appendChild(sectionE);
-//     });
-// }
-
-// getCompanies();
+getRentalInfo();

@@ -343,13 +343,19 @@ form .submitBtn {
   font-size: 50px;
 } */
 
-/* 
+
+
+
+
 thead tr:first-child th {
 	color: var(--secondary-color);
   border: none;
   color: var(--secondary-color);
 }
-thead tr :not(th:first-child) {
+thead tr:nth-child(2) :nth-last-child(2),
+thead tr:nth-child(2) :nth-last-child(1),
+thead tr:nth-child(3) :not(th:first-child),
+tbody th:nth-child(2) {
 	background-color: var(--secondary-color);
 	color: #fff;
 }
@@ -359,41 +365,28 @@ table {
 	border-collapse: collapse;
   height: 30%;
   width: max-content;
-} */
+}
 
-/* caption {
+caption {
 	padding: 15px;
 	caption-side: bottom;
 	color: #000;
 	font-size: .85rem;
 }
-thead tr:first-child th::before,
-thead tr:first-child th::after {
-  content: " ★★★ ";
-}
-
 th, td {
-	padding: 7px 15px;
+	padding: 5px 15px;
 	border: 1px solid grey;
 }
-
-th {
-	font-size: larger;
-}
-
-td {
-	text-align: center;
-  width: 5rem;
-}
-
-tbody td:nth-child(even) {
+tbody tr:nth-child(even) {
 	background-color: var(--accent1-color);
 }
-tbody th {
-  background-color: var(--secondary-color);
-  color: #fff;
+tbody th:first-child {
+	background-color: var(--primary-color);
 }
 
+
+
+/*
 .membership-benefits {
   display: none;
 }
