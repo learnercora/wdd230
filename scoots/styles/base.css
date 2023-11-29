@@ -10,6 +10,9 @@
   --paragraph-font: Oswald, Helvetica, sans-serif;
 }
 
+html {
+  width: fit-content;
+}
 body {
   margin: 0 auto;
   text-align: center;
@@ -141,7 +144,7 @@ nav a:hover {
   position: relative;
 }
 #rental-price-table {
-  grid-column: 1/5;
+  grid-column: 2/4;
 }
 #hero > picture img {
 	width: 100%;
@@ -181,6 +184,38 @@ nav a:hover {
 .card {
   background-color: var(--accent2-color);
   padding: 1rem 0;
+}
+
+
+thead tr:first-child th {
+	color: var(--secondary-color);
+  border: none;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-family: var(--heading-font);
+}
+thead tr:nth-child(2) :nth-last-child(2),
+thead tr:nth-child(2) :nth-last-child(1),
+thead tr:nth-child(3) :not(th:first-child),
+tbody th:nth-child(2) {
+	background-color: var(--secondary-color);
+	color: #fff;
+}
+tbody th:first-child,
+thead tr:nth-child(3) th:first-child,
+thead tr:nth-child(2) {
+	background-color: var(--primary-color);
+}
+table {
+	border-collapse: collapse;
+}
+th, td {
+	padding: 10px 15px;
+	border: 1px solid grey;
+}
+tbody tr:nth-child(even) {
+	background-color: var(--accent1-color);
 }
 
 
@@ -347,42 +382,6 @@ form .submitBtn {
 
 
 
-thead tr:first-child th {
-	color: var(--secondary-color);
-  border: none;
-  color: var(--secondary-color);
-}
-thead tr:nth-child(2) :nth-last-child(2),
-thead tr:nth-child(2) :nth-last-child(1),
-thead tr:nth-child(3) :not(th:first-child),
-tbody th:nth-child(2) {
-	background-color: var(--secondary-color);
-	color: #fff;
-}
-table {
-  grid-column: 2/4;
-	margin: 2rem auto;
-	border-collapse: collapse;
-  height: 30%;
-  width: max-content;
-}
-
-caption {
-	padding: 15px;
-	caption-side: bottom;
-	color: #000;
-	font-size: .85rem;
-}
-th, td {
-	padding: 5px 15px;
-	border: 1px solid grey;
-}
-tbody tr:nth-child(even) {
-	background-color: var(--accent1-color);
-}
-tbody th:first-child {
-	background-color: var(--primary-color);
-}
 
 
 
