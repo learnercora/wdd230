@@ -30,7 +30,98 @@
         </div>
     </nav>
     <main>
-        Reservations
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Join Us</legend>
+                <label class="top">First Name* 
+                    <input type="text" id="fname" name="fname" required>
+                </label>
+                <label class="top">Last Name* 
+                    <input type="text" id="lname" name="lname" required>
+                </label>
+                <label class="top">Title / Position*
+                    <input type="text" id="title" name="title" pattern="[A-Za-z\- ]{7,}" required placeholder="At least 7 alpha characters, hyphens, and spaces.">
+                </label>
+                <label class="top">Email* 
+                    <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+                </label>
+                <label class="top">Mobile Phone*
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]+" title="0912345678">
+                </label>
+                <label class="top">Business/Organization's Name* 
+                    <input type="text" id="organization" name="organization" required>
+                </label>
+                <label class="top">Membership Level
+                    <select name="mlevel">
+                        <option value="">Please Select</option>
+                        <option value="np">NP Membership is for non profit organizations and there is no fee.</option>
+                        <option value="br">Bronze Membership</option>
+                        <option value="si">Silver Membership</option>
+                        <option value="go">Gold Membership</option>
+                    </select>
+                </label>
+                <label class="top">Business/Organization's Description 
+                    <textarea id="orgdescription" name="orgdescription" rows="4" cols="50"></textarea>
+                </label>
+                <label class="top" style="display: none;">Timestamp
+                    <input type="hidden" id="timestamp" name="timestamp"> <!-- readonly -->
+                </label>
+            </fieldset>
+            <input type="submit" class="submitBtn" value="Can't wait to Join">
+        </form>
+        <table class="membership-benefits">
+            <caption>Table: Membership level benefits</caption>
+            <thead>
+                <tr>
+                    <th colspan="5" scope="colgroup">Find What Yon Need</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th scope="col">NP</th>
+                    <th scope="col">Bronze</th>
+                    <th scope="col">Silver</th>
+                    <th scope="col">Gold</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <th>Cost</th>
+                  <td>❌</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                </tr>
+                <tr>
+                    <th>Special Events</th>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th>Training</th>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th>Advertising</th>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th>Event Discounts</th>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                </tr>
+            </tbody>
+
+        </table>
     </main>
     <footer>
         <div class="contact-info">
@@ -57,6 +148,5 @@
         <p>WDD230-Scoots-Project ©2023 Lin, Chih-Yun</p>
     </footer>
     <script src="./scripts/menu-toggle.js"></script>
-    <!-- <script src="scripts/weather.js"></script> -->
 </body>
 </html>
