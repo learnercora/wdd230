@@ -4,13 +4,16 @@
     }
     .rentals-summary {
         grid-column: 2/3;
-      }
-      .weather-info {
+    }
+    .weather-info {
         grid-column: 3/4;
-      }
-      #hero {
+    }
+    #hero {
         grid-column: 1/5;
-      }
+    }
+    #rental-price-table {
+        grid-column: 2/4;
+    }
     .navigation a { 
         display: flex;
         flex: 1 1 100%;
