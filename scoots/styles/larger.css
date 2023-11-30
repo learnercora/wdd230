@@ -1,6 +1,6 @@
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
     main {
-        grid-template-columns: 80px 2fr 1fr 80px;
+        grid-template-columns: 80px 3fr 1fr 80px;
     }
     .rentals-summary {
         grid-column: 2/3;
@@ -13,6 +13,12 @@
     }
     #rental-price-table {
         grid-column: 2/4;
+    }
+    .reservations-form {
+        grid-column: 2/3;
+    }
+    .reservations-rental-agreement {
+        grid-column: 3/4;
     }
     .navigation a { 
         display: flex;

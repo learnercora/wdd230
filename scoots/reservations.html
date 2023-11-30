@@ -29,30 +29,18 @@
             <a href="contact.html">Contact</a>
         </div>
     </nav>
-    <main>
-        <form method="get" action="thankyou.html">
+    <main id="reservations-main">
+        <form class="reservations-form" method="get" action="thankyou.html">
             <fieldset>
-                <legend>Join Us</legend>
-                <label class="top">First Name* 
-                    <input type="text" id="fname" name="fname" required>
+                <legend>BOOK MY SCOOTERS</legend>
+                <label class="top">Start Date* 
+                    <input type="date" id="sdate" name="sdate" required>
                 </label>
-                <label class="top">Last Name* 
-                    <input type="text" id="lname" name="lname" required>
+                <label class="top">Return Date* 
+                    <input type="date" id="rdate" name="rdate" required>
                 </label>
-                <label class="top">Title / Position*
-                    <input type="text" id="title" name="title" pattern="[A-Za-z\- ]{7,}" required placeholder="At least 7 alpha characters, hyphens, and spaces.">
-                </label>
-                <label class="top">Email* 
-                    <input type="email" id="email" name="email" required placeholder="example@gmail.com">
-                </label>
-                <label class="top">Mobile Phone*
-                    <input type="tel" id="phone" name="phone" required pattern="[0-9]+" title="0912345678">
-                </label>
-                <label class="top">Business/Organization's Name* 
-                    <input type="text" id="organization" name="organization" required>
-                </label>
-                <label class="top">Membership Level
-                    <select name="mlevel">
+                <label class="top">Rental Type* 
+                    <select name="rentaltype">
                         <option value="">Please Select</option>
                         <option value="np">NP Membership is for non profit organizations and there is no fee.</option>
                         <option value="br">Bronze Membership</option>
@@ -60,68 +48,48 @@
                         <option value="go">Gold Membership</option>
                     </select>
                 </label>
-                <label class="top">Business/Organization's Description 
-                    <textarea id="orgdescription" name="orgdescription" rows="4" cols="50"></textarea>
+                <label class="top">Number* 
+                    <input type="number" id="number" name="number" required>
+                </label>
+                <label class="top">Phone Number*
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]+" title="0912345678">
+                </label>
+                <label class="top">Name* 
+                    <input type="text" id="name" name="name" required>
+                </label>
+                <label class="top">Email* 
+                    <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+                </label>
+                <label class="top">State/Country* 
+                    <input type="text" id="country" name="country" required>
+                </label>
+                <label class="top">Comments*
+                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                </label>
+                <label class="top">Read Agreements*
+                    <input type="checkbox" id="readagreement" name="readagreement" required>
                 </label>
                 <label class="top" style="display: none;">Timestamp
-                    <input type="hidden" id="timestamp" name="timestamp"> <!-- readonly -->
+                    <input type="hidden" id="timestamp" name="timestamp">
                 </label>
             </fieldset>
-            <input type="submit" class="submitBtn" value="Can't wait to Join">
+            <input type="submit" class="submitBtn" value="BOOK!">
         </form>
-        <table class="membership-benefits">
-            <caption>Table: Membership level benefits</caption>
-            <thead>
-                <tr>
-                    <th colspan="5" scope="colgroup">Find What Yon Need</th>
-                </tr>
-                <tr>
-                    <th></th>
-                    <th scope="col">NP</th>
-                    <th scope="col">Bronze</th>
-                    <th scope="col">Silver</th>
-                    <th scope="col">Gold</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                  <th>Cost</th>
-                  <td>❌</td>
-                  <td>✔️</td>
-                  <td>✔️</td>
-                  <td>✔️</td>
-                </tr>
-                <tr>
-                    <th>Special Events</th>
-                    <td>❌</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                </tr>
-                <tr>
-                    <th>Training</th>
-                    <td>❌</td>
-                    <td>❌</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                </tr>
-                <tr>
-                    <th>Advertising</th>
-                    <td>❌</td>
-                    <td>❌</td>
-                    <td>✔️</td>
-                    <td>✔️</td>
-                </tr>
-                <tr>
-                    <th>Event Discounts</th>
-                    <td>❌</td>
-                    <td>❌</td>
-                    <td>❌</td>
-                    <td>✔️</td>
-                </tr>
-            </tbody>
-
-        </table>
+        <div class="reservations-rental-agreement">
+            <h3>Rental Services and Agreements</h3>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
+        </div>
     </main>
     <footer>
         <div class="contact-info">
