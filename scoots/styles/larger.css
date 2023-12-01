@@ -11,7 +11,7 @@
     #hero {
         grid-column: 1/5;
     }
-    #rental-price-table {
+    #rental-price-table  {
         grid-column: 2/4;
     }
     .reservations-form {
@@ -20,8 +20,16 @@
     .reservations-rental-agreement {
         grid-column: 3/4;
     }
-    .thank-you-layout {
+    .thank-you-layout,
+    .received-layout,
+    .contact-infomation {
         grid-column: 1/5;
+    }
+    .contact-map{
+        grid-column: 2/3;
+    }
+    .contact-form {
+        grid-column: 3/4;
     }
     .navigation a { 
         display: flex;

@@ -30,7 +30,37 @@
         </div>
     </nav>
     <main>
-        Contact
+        <section class="contact-infomation">
+            <h2>Contact Information</h2>
+            <p>Email: service@scoots.com</p>
+            <p>Phone: +886 12345678</p>
+            <p>Location1: Carretera Costera Sur Km 16.6 Col. El Cedral San Francisco Palancar, Cozumel 77600 Mexico</p>
+            <p>Location2: Avenida Rafael E. Melgar, Carretera Costera del Golfo Norte, Zona Hotelera Nte., 77613 Cozumel, Q.R., Mexico</p>
+        </section>
+        <section class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d59822.8020172644!2d-87.0379193025398!3d20.427162169963946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x8f4e53caaa465f89%3A0x7a2cbebeda24e0f3!2sOccidental%20Cozumel%2C%20Carretera%20Costera%20Sur%20Km%2016.6%20Col.%20El%20Cedral%2C%2077600%20Cozumel%2C%20Q.R.%2C%20%E5%A2%A8%E8%A5%BF%E5%93%A5!3m2!1d20.376331!2d-87.02036!4m5!1s0x8f4e574f50500469%3A0x195a5b52cf005474!2zQ2Fyci4gQ29zdGVyYSBTdXIgJiBBdi4gUmFmYWVsIEUuIE1lbGdhciwgNzc2NzUgQ296dW1lbCwgUS5SLiwg5aKo6KW_5ZOl!3m2!1d20.4780879!2d-86.9729079!5e0!3m2!1szh-TW!2stw!4v1701400581405!5m2!1szh-TW!2stw" 
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="contact-form">
+            <form method="get" action="aftercontact.html">
+                <fieldset>
+                    <legend>CONTACT US</legend>
+                    <label class="top">Name* 
+                        <input type="text" id="name" name="name" required>
+                    </label>
+                    <label class="top">Email* 
+                        <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+                    </label>
+                    <label class="top">Comments*
+                        <textarea id="comments" name="comments" rows="4" cols="50" required></textarea>
+                    </label>
+                    <label class="top" style="display: none;">Timestamp
+                        <input type="hidden" id="timestamp" name="timestamp">
+                    </label>
+                </fieldset>
+                <input type="submit" class="submitBtn" value="Send">
+            </form>
+        </section>
     </main>
     <footer>
         <div class="contact-info">
@@ -40,8 +70,8 @@
         </div>
         <div class="location-info">
             <h3>LOCATIONS</h3>
-            <p>Carretera Costera km 2.1,nCozumel, Q.Roo., México, 77600</p>
-            <p>Calle 22 de Enero No. 261 Col. Centro. Chetumal, Quintana Roo 77000 Mexico</p>
+            <p>Carretera Costera Sur Km 16.6 Col. El Cedral San Francisco Palancar, Cozumel 77600 Mexico</p>
+            <p>Avenida Rafael E. Melgar, Carretera Costera del Golfo Norte, Zona Hotelera Nte., 77613 Cozumel, Q.R., Mexico</p>
         </div>
         <div class="social-media-links">
             <a href="https://www.facebook.com/" target="_blank">
