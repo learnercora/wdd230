@@ -1,0 +1,8 @@
+@media screen and (min-width: 700px) and (max-width: 999px) {
+    .reservations-form {
+        grid-column: 1/3;
+    }
+    .reservations-rental-agreement {
+        grid-column: 1/3;
+    }
+}
